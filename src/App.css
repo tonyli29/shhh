@@ -36,3 +36,141 @@
     transform: rotate(360deg);
   }
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.todo-container {
+  width: 700px;
+  margin: auto;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-item h1 {
+  font-size: 20px;
+}
+
+.calculator-container {
+  height: 200px;
+}
+
+.number-button {
+  padding: 5px;
+  background-color: blue;
+  color: white;
+  border-radius: 20%;
+}
+
+.button {
+  cursor: pointer;
+  background-color: green;
+  color: white;
+  transition: 1s;
+}
+
+.button:hover {
+  background-color: aqua;
+}
+
+.navbar {
+  transition-delay: 1s;
+}
+
+.navbar:hover {
+  background-color: #61dafb;
+  animation: anime 1s ease-in infinite;
+}
+
+@keyframes anime {
+  33% {
+    border-color: #282c34;
+  }
+  66% {
+    background-color: #61dafb;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+/* @keyframes anime {
+  33% {
+    transform: translateX(100%);
+  }
+  66% {
+    transform: translateX(100%) translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+} */
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: blue;
+  height: 300px;
+  width: 300px;
+}
+
+.fill {
+  display: flex;
+}
+
+.cb {
+  height: 500px;
+  width: 350px;
+  background-color: grey;
+}
+
+.bs-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 200px;
+  background-color: red;
+  margin: auto;
+}
+
+.button {
+  width: 100%;
+  display: block;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.border-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.border-box .button {
+  background-color: grey;
+  border-bottom: 1px red solid;
+}
+.border-box .button:hover {
+  background-color: grey;
+  border-bottom: 1px white solid;
+}
